@@ -1,3 +1,3 @@
 # 98jacobrey.github.io
 
-<h1>testing 2</h1>
+Welcome to my portfolio page. Here I have written my resume blog and have demos, with code snippets on display for everyone.
