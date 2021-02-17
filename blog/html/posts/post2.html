@@ -71,21 +71,19 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>
+          <p>Ever wonder how to naturally fill a website with unique web pages that are directly tied to a database. Well, I did. After thinking about it and searching the web for about fifteen minutes I found that the answer is quite simple. Step one, create a template that you can use to fill with a database entry. Step two, populate a database with content that will be used to create your pages. Step three, create a way to identify what data to pull.</p>
+          
+          <p>PHP has the capability to create a dynamic and automated website easily.  Using tools like explode to gather post ids for the database and parse its content through a PHP template. This allowed me to make one template for all my blog posts that would then be populated by my PHP code, saving space and time.</p>
+          
+          <h2 class="section-heading">PHP Fetch Code</h2>
 
-          <h2 class="section-heading">The Final Frontier</h2>
-
-          <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
-
-          <h2 class="section-heading">Reaching for the Stars</h2>
-
-          <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.</p>
-
-          <a href="#">
-            <img class="img-fluid" src="img/post-sample-image.jpg" alt="">
-          </a>
-          <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
-
+          <p>$query = explode('/', parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));</br>
+$qs = array(); foreach ($query as $key=>$value) $qs[$key] = urldecode(htmlspecialchars($value)); </br>
+array_shift($qs); </br>
+</p>
+          
+          <p>Here we separate each section of the URL by each “/” to fill an array that will be used to later identify what to pull from our database. We then use the array to determine which table we use, and identify the primary key. After that we simply echo the appropriate content from the entry and then you have your blog post. 
+</p>
         </div>
       </div>
     </div>
