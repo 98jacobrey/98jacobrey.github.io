@@ -71,20 +71,17 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>
+          <p>I was looking at other websites like blogs, social media, and online stores. This led me to wonder, how do they create a new element for each post or tweet or even products. The answer was in foreach. A powerful tool that can be used to repeat elements for every entry within a database. Using this can even help create unique <a> elements that will lead to their respective webpage.</p>
 
-          <h2 class="section-heading">The Final Frontier</h2>
+          <p> $sql = $pdo->query("SELECT * FROM products")->fetchall(PDO::FETCH_ASSOC);</br> 
+        foreach($sql as $row):</br>
+        endforeach;</p>
 
-          <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
+          <p>Here is the short and effective code that will make creating large live products a quick and simple process. All we need to do is connect to our database, and then parse that info through a foreach loop. After that simply insert the necessary data into its appropriate positions and you have the quickest self populating site possible.</p>
 
-          <h2 class="section-heading">Reaching for the Stars</h2>
-
-          <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.</p>
-
-          <a href="#">
-            <img class="img-fluid" src="img/post-sample-image.jpg" alt="">
-          </a>
-          <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
+          <p>Now for the link side of it, there’s a few solutions for it. We could simply have a column that automatically merges our primary key into a URL or we can simply pull the primary key and insert it directly into the href.
+</p>
+          
 
         </div>
       </div>
