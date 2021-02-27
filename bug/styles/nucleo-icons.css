@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'Nucleo';
-  src: url('../fonts/nucleo.eot');
-  src: url('../fonts/nucleo.eot') format('embedded-opentype'),
-    url('../fonts/nucleo.woff2') format('woff2'),
-    url('../fonts/nucleo.woff') format('woff'),
-    url('../fonts/nucleo.ttf') format('truetype'),
+  src: url('/bug/fonts/nucleo.eot');
+  src: url('/bug/fonts/nucleo.eot') format('embedded-opentype'),
+    url('/bug/fonts/nucleo.woff2') format('woff2'),
+    url('/bug/fonts/nucleo.woff') format('woff'),
+    url('/bug/fonts/nucleo.ttf') format('truetype'),
     url('../fonts/nucleo.svg') format('svg');
   font-weight: normal;
   font-style: normal;
